@@ -18,18 +18,16 @@ providing us the opportunity to create such a great project in just 12-hours!
 
 The Scrap function navigates to a given URL using Chrome WebDriver, parses the webpage content, and extracts text and links
 
-first set the url in the scrapper.py file to the site-link you want to scrape, then run
-```
-python scrapper.py
-```
-
-
-
 ### Requirements
 
 ```
 pip install selenium webdriver-manager
 pip install bs4
+```
+
+first set the url in the scrapper.py file to the site-link you want to scrape, then run
+```
+python scrapper.py
 ```
 
 ## Input
