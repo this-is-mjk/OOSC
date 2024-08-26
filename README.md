@@ -3,7 +3,7 @@ A system that automates the process of generating relevant questions from websit
 
 ## Special Thanks to-
 * Overlayy
-* RedBull
+* RedBull Basement
 * OOSC
 providing us the opportunity to create such a great project in just 12-hours!
 
