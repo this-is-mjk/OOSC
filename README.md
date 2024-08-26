@@ -1,19 +1,19 @@
-### Requirements
+# Requirements
 
 ```
 pip install selenium webdriver-manager
 pip install bs4
 ```
 
-### Scrape function
+# Scrape function
 
 The Scrap function navigates to a given URL using Chrome WebDriver, parses the webpage content, and extracts text and links
 
-# Input
+## Input
 
 Takes the URL of the page to be scraped.
 
-# Example Use:
+### Example Use:
 ```
 from scrape_module import Scrap
 
@@ -24,14 +24,14 @@ print(scraped_data)
 
 ```
 
-# Output
+## Output
 
 The function returns a dictionary containing:
 
 1. relevant_link: A list of dictionaries with URLs and their respective page titles.
 2. data: A string concatenating all extracted text and interactive elements' information from the webpage.
 
-# Example Output:
+### Example Output:
 {
     "relevant_link": [
         {
