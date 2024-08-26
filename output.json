@@ -1,0 +1,40 @@
+[
+    {
+        "url": "https://www.openai.com/",
+        "questions":[
+            "What does OpenAI specialize in?",
+            "How can I use ChatGPT for my business?",
+            "What are the pricing options for OpenAI's products?",
+            "How does OpenAI ensure data privacy?",
+            "Can I integrate OpenAI's models into my existing software?",
+            "What are the ethical guidelines OpenAI follows?",
+            "How does OpenAI contribute to AI research?",
+            "What are the benefits of using OpenAI's API?",
+            "How can I get started with OpenAI's tools?",
+            "Does OpenAI offer any educational resources or tutorials?"
+        ],
+        "relevant_links": [
+            {
+                "url": "https://openai.com/chatgpt",
+                "title": "ChatGPT"
+            },
+            {
+                "url": "https://openai.com/about",
+                "title": "About Us"
+            },
+            {
+                "url": "https://openai.com/charter",
+                "title": "Our Charter"
+            },
+            {
+                "url": "https://openai.com/faq",
+                "title": "FAQ"
+            },
+            {
+                "url": "https://openai.com/security-and-privacy/",
+                "title": "Security and Privacy"
+            }
+            
+        ]
+    }
+]

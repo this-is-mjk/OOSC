@@ -65,24 +65,38 @@ def Scrap(url):
 
             if attributes:
                 data += f"{tag_name} attributes: {', '.join(attributes)} "
-    # Create a list of objects 
-    result = {
-        'links': list(links),
-        'data': data 
-    }
+
+    # get the titile for the links
+    relevant_links = []
+    for url in links:
+        try:
+            # Send an HTTP request to fetch the webpage content
+            response = driver.get(url) 
+            # Parse the content using BeautifulSoup
+            soup = BeautifulSoup(driver.page_source, 'html.parser')
+            title = soup.title.string if soup.title else 'No Title Found'
+
+            # Append the URL and title to the result list
+            relevant_links.append({
+                "url": url,
+                "title": title
+            })
+        except Exception as e:
+            print(f"Failed to fetch {url}: {str(e)}")
 
     # close the browser
     driver.quit()
+
+    result = {
+        'relevant_link': relevant_links,
+        'data': data 
+    }
     # write the scrapped data
     with open('data.json', 'w', encoding='utf-8') as f:
         json.dump(result, f, ensure_ascii=False, indent=4)
 
     return result
 
-
-## write the scrapped data
-# with open('data.json', 'w', encoding='utf-8') as f:
-#     json.dump(result, f, ensure_ascii=False, indent=4)
 
 ## word_count 
 # word_count = len(str(data).split())
