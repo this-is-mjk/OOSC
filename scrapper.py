@@ -8,6 +8,9 @@ from webdriver_manager.chrome import ChromeDriverManager
 from bs4 import BeautifulSoup
 from collections import defaultdict
 
+url = "https://medium.com/@bijit211987/chunking-strategies-for-fine-tuning-llms-30d2988c3b7a"
+# set the url you want to scrap
+
 def Scrap(url):
     # set up Chrome WebDriver using ChromeDriverManager 
     driver = webdriver.Chrome(service=ChromeService( 
@@ -94,7 +97,7 @@ def Scrap(url):
 
     return result
 
-
+Scrap(url)
 ## word_count 
 # word_count = len(str(data).split())
 #  print("Word count:", word_count)
