@@ -32,6 +32,7 @@ The function returns a dictionary containing:
 2. data: A string concatenating all extracted text and interactive elements' information from the webpage.
 
 ### Example Output:
+```
 {
     "relevant_link": [
         {
@@ -45,4 +46,5 @@ The function returns a dictionary containing:
     ],
     "data": "h1: Example Heading p: This is an example paragraph. links to: https://example.com/page1 ..."
 }
+```
 
