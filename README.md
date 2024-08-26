@@ -61,6 +61,14 @@ The function returns a dictionary containing:
 # Semantic Chunking and Question Generation with Llama 3.1 8B Instruct
 This project leverages various NLP techniques, including semantic chunking, question generation, and clustering, to process textual data and generate relevant questions. The goal is to produce meaningful questions that focus on the most important parts of the content provided.
 
+```
+==((====))==  Unsloth 2024.8: Fast Llama patching. Transformers = 4.44.2.
+   \\   /|    GPU: Tesla T4. Max memory: 14.748 GB. Platform = Linux.
+O^O/ \_/ \    Pytorch: 2.3.1+cu121. CUDA = 7.5. CUDA Toolkit = 12.1.
+\        /    Bfloat16 = FALSE. FA [Xformers = 0.0.26.post1. FA2 = False]
+ "-____-"     Free Apache license: http://github.com/unslothai/unsloth
+```
+
 ## Overview
 This project automates the process of extracting data from a JSON file, applying semantic chunking, and generating questions that focus on key themes, details, and implications of the content. The generated questions are then clustered using K-means and linked to relevant online resources.
 
