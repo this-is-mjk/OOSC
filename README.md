@@ -121,6 +121,9 @@ python automator.py
 it will verify that each webpage has exactly 10 questions, each under 80 characters, and that each entry includes 5 relevant links and topics.
 2. We can also evaluate the performance of the question generation and using Cosine Similarity in the last code block.
 
+![image](https://github.com/user-attachments/assets/29b4beec-dcf4-4dcf-b787-1fb92f668c28)
+
+
 # Acknowledgements
 * Llama 3.1 8B Instruct: For question generation.
 * Semantic-Split: For text chunking.
