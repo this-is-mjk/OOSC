@@ -32,7 +32,8 @@ The function returns a dictionary containing:
 2. data: A string concatenating all extracted text and interactive elements' information from the webpage.
 
 ## Example Output:
-```{
+```
+{
     "relevant_link": [
         {
             "url": "https://example.com/page1",
@@ -44,9 +45,9 @@ The function returns a dictionary containing:
         }
     ],
     "data": "h1: Example Heading p: This is an example paragraph. links to: https://example.com/page1 ..."
-}```
+}
+```
 
-*****************************************************************************************************************************************************
 # Semantic Chunking and Question Generation with Llama 3.1 8B Instruct
 This project leverages various NLP techniques, including semantic chunking, question generation, and clustering, to process textual data and generate relevant questions. The goal is to produce meaningful questions that focus on the most important parts of the content provided.
 
