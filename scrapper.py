@@ -8,9 +8,6 @@ from webdriver_manager.chrome import ChromeDriverManager
 from bs4 import BeautifulSoup
 from collections import defaultdict
 
-# URL
-url = 'https://www.w3schools.com/tags/ref_byfunc.asp'
-
 def Scrap(url):
     # set up Chrome WebDriver using ChromeDriverManager 
     driver = webdriver.Chrome(service=ChromeService( 
@@ -92,7 +89,7 @@ def Scrap(url):
         'data': data 
     }
     # write the scrapped data
-    with open('data.json', 'w', encoding='utf-8') as f:
+    with open('data5.json', 'w', encoding='utf-8') as f:
         json.dump(result, f, ensure_ascii=False, indent=4)
 
     return result
