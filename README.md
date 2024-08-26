@@ -3,9 +3,18 @@ A system that automates the process of generating relevant questions from websit
 
 ## Special Thanks to-
 * Overlayy
-* RedBull Basement
+* RedBull
 * OOSC
 providing us the opportunity to create such a great project in just 12-hours!
+
+# PROJECT STRUCTURE
+'dataSet' contains the scraped data of different websites.
+'output' contains the output of the corresponding datasets
+### main.ipynb
+It contains the core part of our project, question generation, and most relevant top 5 link and title generation
+### Helper Files
+* scrapper.py : used for scrapping data from the required websites
+* automater.py: tests the generated output with the required parameters
 
 ### CREATED BY:
 * Joel Bansal
@@ -14,32 +23,41 @@ providing us the opportunity to create such a great project in just 12-hours!
 * Yash Pandit
 * Nischay Agarwal
 
+## Dependencies
+To run this project, you need the following Python libraries:
+
+* semantic-split
+* nltk
+* beautifulsoup4
+* unsloth
+* transformers
+* torch
+* sklearn
+* sentence-transformers
+* numpy
+* requests
+
+### Requirements
+```
+!pip install semantic-split nltk beautifulsoup4 unsloth sentence-transformers transformers torch sklearn numpy requests
+!pip install selenium webdriver-manager
+!pip install bs4
+```
+
+### How to run?
+First set the url in the scrapper.py file to the site-link you want to scrape, then run
+```
+python scrapper.py
+```
+after scrapping, change the path of the data.json file created in main.ipynb file,
+and run the main.ipynb file block by block
+finally you will recieve a output.json file in your Present Working Directory.
+
+
 # Scrape function
 
 The Scrap function navigates to a given URL using Chrome WebDriver, parses the webpage content, and extracts text and links
 
-### Requirements
-
-```
-pip install selenium webdriver-manager
-pip install bs4
-```
-
-first set the url in the scrapper.py file to the site-link you want to scrape, then run
-```
-python scrapper.py
-```
-after scrapping, cahange the path of the data.json file created in main.ipynb file,
-and run the main.ipynb file block by block
-finally you will recieve a output.json file in your PWD.
-
-
-
-
-
-## Input
-
-Takes the URL of the page to be scraped.
 
 ### Example Use:
 ```
@@ -76,6 +94,8 @@ The function returns a dictionary containing:
 }
 ```
 
+__________________________________________________________________________________________________________________
+
 # Semantic Chunking and Question Generation with Llama 3.1 8B Instruct
 This project leverages various NLP techniques, including semantic chunking, question generation, and clustering, to process textual data and generate relevant questions. The goal is to produce meaningful questions that focus on the most important parts of the content provided.
 
@@ -87,33 +107,8 @@ O^O/ \_/ \    Pytorch: 2.3.1+cu121. CUDA = 7.5. CUDA Toolkit = 12.1.
  "-____-"     Free Apache license: http://github.com/unslothai/unsloth
 ```
 
-## Overview
-This project automates the process of extracting data from a JSON file, applying semantic chunking, and generating questions that focus on key themes, details, and implications of the content. The generated questions are then clustered using K-means and linked to relevant online resources.
-
-## Dependencies
-To run this project, you need the following Python libraries:
-
-* semantic-split
-* nltk
-* beautifulsoup4
-* unsloth
-* transformers
-* torch
-* sklearn
-* sentence-transformers
-* numpy
-* requests
-
-```
-!pip install semantic-split nltk beautifulsoup4 unsloth sentence-transformers transformers torch sklearn numpy requests
-```
-
-## Data Source
-1. The main content is loaded from a JSON file located at: https://raw.githubusercontent.com/this-is-mjk/OOSC/main/dataSet/data.json.
-2. An additional webpage is scraped from: https://medium.com/@bijit211987/chunking-strategies-for-fine-tuning-llms-30d2988c3b7a.
-
 ## Workflow
-1. Data Loading: The content is loaded from a JSON file and a webpage is scraped for additional data.
+1. Data Loading: The content is loaded from a JSON file and a webpage is scraped for data.
 2. Semantic Chunking: The text data is split into smaller, meaningful chunks using sentence similarity techniques.
 3. Question Generation: Questions are generated based on the chunked text, focusing on various aspects such as general understanding, specific details, and critical thinking.
 4. Clustering: The questions are grouped into clusters to identify the most representative questions.
@@ -134,7 +129,6 @@ it will verify that each webpage has exactly 10 questions, each under 80 charact
 2. We can also evaluate the performance of the question generation and using Cosine Similarity in the last code block.
 
 ![image](https://github.com/user-attachments/assets/29b4beec-dcf4-4dcf-b787-1fb92f668c28)
-
 
 # Acknowledgements
 * Llama 3.1 8B Instruct: For question generation.
