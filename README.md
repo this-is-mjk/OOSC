@@ -1,6 +1,12 @@
 # Project Overview:
 A system that automates the process of generating relevant questions from website content.
 
+## Special Thanks to-
+* Overlayy
+* RedBull
+* OOSC
+providing us the opportunity to create such a great project in just 12-hours!
+
 ### CREATED BY:
 * Joel Bansal
 * Manas Jain Kuniya
@@ -106,6 +112,14 @@ To run this project, you need the following Python libraries:
 * Questions: A list of generated questions focusing on different aspects of the content.
 * Relevant Links: Top 5 matching links from the provided resources based on the generated questions.
 * Cosine Similarity Score: A score indicating how closely the generated questions match the original content.
+
+### Automation and Validation:
+1. After creating the output.json, run
+```
+python automator.py
+```
+it will verify that each webpage has exactly 10 questions, each under 80 characters, and that each entry includes 5 relevant links and topics.
+2. We can also evaluate the performance of the question generation and using Cosine Similarity in the last code block.
 
 # Acknowledgements
 * Llama 3.1 8B Instruct: For question generation.
