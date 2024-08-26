@@ -29,6 +29,13 @@ first set the url in the scrapper.py file to the site-link you want to scrape, t
 ```
 python scrapper.py
 ```
+after scrapping, cahange the path of the data.json file created in main.ipynb file,
+and run the main.ipynb file block by block
+finally you will recieve a output.json file in your PWD.
+
+
+
+
 
 ## Input
 
