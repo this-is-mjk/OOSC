@@ -1,13 +1,23 @@
+# Project Overview:
+A system that automates the process of generating relevant questions from website content.
+
+### CREATED BY:
+* Joel Bansal
+* Manas Jain Kuniya
+* Pranav Krishna
+* Yash Pandit
+* Nischay Agarwal
+
+# Scrape function
+
+The Scrap function navigates to a given URL using Chrome WebDriver, parses the webpage content, and extracts text and links
+
 ### Requirements
 
 ```
 pip install selenium webdriver-manager
 pip install bs4
 ```
-
-# Scrape function
-
-The Scrap function navigates to a given URL using Chrome WebDriver, parses the webpage content, and extracts text and links
 
 ## Input
 
@@ -68,7 +78,9 @@ To run this project, you need the following Python libraries:
 * numpy
 * requests
 
+```
 !pip install semantic-split nltk beautifulsoup4 unsloth sentence-transformers transformers torch sklearn numpy requests
+```
 
 ## Data Source
 1. The main content is loaded from a JSON file located at: https://raw.githubusercontent.com/this-is-mjk/OOSC/main/dataSet/data.json.
